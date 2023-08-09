@@ -1,0 +1,231 @@
+.profile-card{
+    position:relative;
+    overflow: hidden;
+    margin-bottom:10px;
+    box-shadow:0px 2px 3px #222;
+    top:10px;
+}
+.profile-card:hover .profile-img img
+{
+    transform: scale(1.2);
+}
+.profile-card .profile-img img{
+    width:100%;
+    height:auto;
+    transition: transform 1s;
+}
+.profile-card .profile-content::before{
+    content: "";
+    position:absolute;
+    top:0;
+    left:0;
+    width:50%;
+    height:40%;
+    border:3px solid #333;
+    border-right:3px solid transparent;
+    border-bottom:3px solid transparent;
+    transform: scale(1,1);
+    transition: all 0.50s linear;
+}
+.profile-card .profile-content::after{
+    content: "";
+    position:absolute;
+    bottom:0;
+    right:0;
+    width:50%;
+    height:40%;
+    border:3px solid #222;
+    border-left:3px solid transparent;
+    border-top:3px solid transparent;
+    transition: all 0.50s linear;
+    
+}
+.profile-card:hover .profile-content:before{
+    top:20px;
+    left:20px;
+}
+.profile-card:hover .profile-content:after{
+    bottom:20px;
+    right:20px;
+}
+
+.profile-card .profile-content{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    padding:50% 4%;
+    text-align: center;
+   
+}
+.profile-card .profile-content:hover{
+    background-color: rgba(83, 91, 177, 0.5);
+    /* background-color: #D8C1E1; */
+}
+.profile-card .profile-content .title{
+    font-size:20px;
+    color:white;
+    opacity:0;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    transform: translateY(-100px);
+    transition:all 900ms cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.20s;
+}
+.profile-card:hover .title{
+    opacity:1;
+    transform: translateY(0);
+}
+.profile-card:hover .title::after{
+    content:"";
+    display:block;
+    width:50%;
+    margin:10px auto;
+    border-bottom:2px solid #222;
+}
+.profile-card .profile-content .title > span{
+    display:block;
+    margin:5px 0;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+.profile-card .profile-content .social-link{
+    margin:20px 0;
+    padding:0;
+    opacity:0;
+    transform: translateY(100px);
+    transition:all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.20s;
+}
+.profile-card:hover .social-link{
+    opacity:1;
+    transform: translateY(0);
+}
+.profile-card .profile-content .social-link li{
+    display: inline-block;
+    list-style: none;
+    margin:4px;
+}
+.profile-card .profile-content .social-link li a{
+    color:#333;
+    width:30px;
+    height:25px;
+    line-height:24px;
+    text-align: center;
+    border-radius:5px;
+    background-color: #fff;
+}
+.profile-card{
+    background-color: aquamarine;
+}
+#name{
+    /* font-family: "Times New Roman", Times, serif; */
+    font-size:50px;
+    font-family: Montserrat;
+    color: #fff;
+    font-weight: 100;  
+}
+#intro{
+    font-size:15px;
+    font-family: 'Roboto', sans-serif;
+    color: grey; 
+}
+.details{
+    position: absolute;
+    padding-left: 75px;
+    padding-top: 100px;
+    /* background-color: #5f43b2; */
+    background-color:#535BB1;
+    background-color: black;
+    /* background-color: rgba(199, 134, 234); */
+    padding-bottom: 90px;
+    width:100%  
+}
+btn {
+    margin: 30px 15px;
+    background: #535BB1;
+    padding: 10px 25px;
+    border-radius: 3px;
+    border: 1px solid #535bb1;
+    font-weight: bold;
+    font-family: Montserrat;
+    cursor: pointer;
+    color: #222;
+    transition: 0.2s;
+}
+
+.btn:last-of-type {
+    background: transparent;
+    border-color: #535bb1;
+    color: #535bb1;
+}
+
+.btn:hover {
+    background: #535bb1;
+    color: black;
+}
+.head{
+    font-family: 'Brush Script MT', cursive;
+    color: black;
+    font-weight:bold;
+    font-size: 50px;
+}
+u{
+    text-decoration-color: #535BB1;
+    width: 40%;
+}
+#dummyp{
+    color:#CBC3E3;
+}
+#dummyg{
+    color:#D3D3D3;
+}
+.imagesize{
+    /* max-width:800px;
+     max-height:400px; */
+    width:550px;
+    height:300px;
+    transition: transform 0.5s;
+}
+.imagesize:hover{
+    transform: scale(1.1);
+}
+#about-me-box{
+    background-color: #CBC3E3;
+}
+#edu-box{
+    background-color: #D3D3D3;
+}
+.para{
+    margin-left: 40px;
+    margin-right:20px;
+    font-family: Georgia, serif;
+}
+#navbarNavAltMarkup .nav-link{
+   color:black 
+}
+#navbarNavAltMarkup .nav-link:hover{
+    color: #535BB1;
+    border-bottom: 3px solid #535BB1;
+}
+#bottom .navbar{
+    position: relative;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    bottom: 0;
+}
+#navbarNav .nav-link{
+    color:black;
+}
+#navbarNav .nav-link:hover{
+    color: #535BB1;
+}
+.navbar-nav li a{
+        float: left;
+        padding: 12px;
+        color: white;
+        text-decoration: none;
+        font-size: 17px;
+        width: 25%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+        text-align: center; /* If you want the text to be centered */
+}
+
